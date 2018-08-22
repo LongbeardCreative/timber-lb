@@ -1,6 +1,13 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+      sass: {
+        dist: {
+          options: {
+            loadPath: ['node_modules/foundation-sites/scss']
+          }
+        }
+      },
     postcss: {
       options: {
         map: true, // inline sourcemaps 
