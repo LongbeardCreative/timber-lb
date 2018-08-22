@@ -1,0 +1,79 @@
+/*!
+Theme Name: Bridge Child
+Theme URI: http://demo.qodeinteractive.com/bridge/
+Description: A child theme of Bridge Theme
+Author: Longbeard
+Author URI: https://www.longbeard.com
+Version: 1.0.0
+Template: bridge
+*/
+
+/******************************************************************
+
+Site Name: 
+Author: Longbeard
+
+Stylesheet: Main Stylesheet
+******************************************************************/
+
+/*********************
+IMPORT ELEMENTS
+*********************/
+
+// Sass variables
+@import 'utilities/variables';
+
+// typography
+@import 'utilities/typography';
+
+// import mixin
+@import 'utilities/mixins';
+
+/*********************
+IMPORT PAGES
+*********************/
+// styles in base.scss
+@import 'pages/base';
+
+// Homepage
+.home {
+    @import 'pages/homepage';
+}
+
+// About
+.page-id-xx {
+    @import 'pages/about';
+}
+
+// News & Stories
+.page-id-xx {
+    @import 'pages/news';
+}
+
+// Contact
+.page-id-xx {
+    @import 'pages/contact';
+}
+
+// Search
+.search-results {
+    @import 'pages/search';
+}
+
+// Post template
+.single-post {
+    @import 'pages/post';
+}
+
+// Post template
+.error404 {
+    @import 'pages/404';
+}
+
+/*********************
+PRINT STYLESHEET
+*********************/
+@media print {
+    // styles in print.scss
+    @import 'utilities/print';
+}
